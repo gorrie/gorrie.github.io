@@ -1,0 +1,65 @@
+url: https://locked.net
+baseurl: /
+
+# Site settings
+title: Locked Networks
+email: contact@locked.net
+description: "Locked Networks is a technology services firm that solves problems for business and other entities. We tackle problems in cloud, information security, enterprise, or wherever help is needed."
+
+
+# Team names, titles and social links
+people:
+- name: Ian Gorrie
+  pic: 1
+  position: Principal
+  social:
+    - title: twitter
+      url: https://twitter.com/gorrie
+    - title: linkedin
+      url: https://linkedin.com/in/gorrie
+    - title: google-plus
+      url: https://plus.google.com/+IanGorrie
+
+- name: Tucker Preston
+  pic: 2
+  position: Network Architect
+  social:
+#    - title: twitter
+#      url: #
+#    - title: facebook
+#      url: #
+     - title: linkedin
+       url: https://www.linkedin.com/in/tuckerpreston
+
+#- name: Diana Petersen
+#  pic: 3
+#  position: Lead Developer
+#  social:
+#    - title: twitter
+#      url: #
+#    - title: facebook
+#      url: #
+#    - title: google-plus
+#      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/lockednet
+  - title: linkedin
+    url: https://www.linkedin.com/company/locked-networks
+  - title: google-plus
+    url: https://plus.google.com/+LockedNetworks
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
+#  - title: github
+#    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 1425 Broadway 20-4405
+  - line: Seattle, WA 98122
+
+# Build settings
+markdown: kramdown
+permalink: pretty

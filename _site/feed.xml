@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Locked Networks</title>
+    <description>Locked Networks is a technology services firm that solves problems for business and other entities. We tackle problems in cloud, information security, enterprise, or wherever help is needed.</description>
+    <link>https://locked.net//</link>
+    <atom:link href="https://locked.net//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 10 Aug 2016 20:26:33 -0700</pubDate>
+    <lastBuildDate>Wed, 10 Aug 2016 20:26:33 -0700</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>DoE FISMA Controls Assessment</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
+        <link>https://locked.net//web%20development/2014/07/18/project/</link>
+        <guid isPermaLink="true">https://locked.net//web%20development/2014/07/18/project/</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Comprehensive Security Assessment</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
+        <link>https://locked.net//web%20development/2014/07/18/project-1/</link>
+        <guid isPermaLink="true">https://locked.net//web%20development/2014/07/18/project-1/</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+  </channel>
+</rss>
