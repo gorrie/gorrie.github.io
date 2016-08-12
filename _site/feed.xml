@@ -5,33 +5,117 @@
     <description>Locked Networks is a technology services firm that solves problems for business and other entities. We tackle problems in cloud, information security, enterprise, or wherever help is needed.</description>
     <link>https://locked.net/</link>
     <atom:link href="https://locked.net/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Aug 2016 03:56:48 -0700</pubDate>
-    <lastBuildDate>Fri, 12 Aug 2016 03:56:48 -0700</lastBuildDate>
+    <pubDate>Fri, 12 Aug 2016 10:36:40 -0700</pubDate>
+    <lastBuildDate>Fri, 12 Aug 2016 10:36:40 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>DoE FISMA Controls Assessment</title>
+        <title>Internet</title>
         <description>
 </description>
-        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
-        <link>https://locked.net/web%20development/2014/07/18/project/</link>
-        <guid isPermaLink="true">https://locked.net/web%20development/2014/07/18/project/</guid>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/web/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/web/</guid>
         
-        
-        <category>Web Development</category>
         
       </item>
     
       <item>
-        <title>Comprehensive Security Assessment</title>
+        <title>CISO Advisory</title>
         <description>
 </description>
-        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
-        <link>https://locked.net/web%20development/2014/07/18/project-1/</link>
-        <guid isPermaLink="true">https://locked.net/web%20development/2014/07/18/project-1/</guid>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/vciso/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/vciso/</guid>
         
         
-        <category>Web Development</category>
+      </item>
+    
+      <item>
+        <title>Technology Strategy</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/strategy/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/strategy/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Security Programs</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/securityprogram/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/securityprogram/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Penetration Testing</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/pentest/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/pentest/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Internet</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/internet/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/internet/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Data Programs</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/data/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/data/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Cloud Security Strategy</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/cloudsec/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/cloudsec/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Security Assessment</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/assessment/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/assessment/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Application Security</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Aug 2016 00:00:00 -0700</pubDate>
+        <link>https://locked.net/2016/08/12/app/</link>
+        <guid isPermaLink="true">https://locked.net/2016/08/12/app/</guid>
+        
         
       </item>
     

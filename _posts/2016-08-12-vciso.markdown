@@ -1,0 +1,15 @@
+---
+title: CISO Advisory
+subtitle:
+layout: default
+modal-id: 8
+date: 2016-08-12
+img: ciso.jpg
+thumbnail: ciso-thumbnail.jpg
+alt: image-alt
+project-date:
+client:
+category:
+description: Assisting in the role of a security officer, or in supplementing CISO teams, when a full time role is not required or additional efforts are needed.
+
+---

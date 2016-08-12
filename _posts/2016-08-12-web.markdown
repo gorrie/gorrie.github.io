@@ -1,0 +1,15 @@
+---
+title: Internet
+subtitle:
+layout: default
+modal-id: 9
+date: 2016-08-12
+img: cloud.jpg
+thumbnail: cloud-thumbnail.jpg
+alt: image-alt
+project-date:
+client: Cloud vendor
+category:
+description: Adoption of agile security practices to provide assurance to compliance and client environments
+
+---

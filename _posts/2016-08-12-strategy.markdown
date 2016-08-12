@@ -1,0 +1,15 @@
+---
+title: Technology Strategy
+subtitle:
+layout: default
+modal-id: 7
+date: 2016-08-12
+img: strategy.jpg
+thumbnail: strategy-thumbnail.jpg
+alt: image-alt
+project-date:
+client:
+category:
+description: Leveraging technology to enable business efficiently
+
+---
