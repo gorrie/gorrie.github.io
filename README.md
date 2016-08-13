@@ -1,3 +1,14 @@
+A zero dollar large cloud powered website for a consultancy which has no real dependancies and can be tossed behind cloudflare for mostly trouble-free marketing.
+
+I forked the theme, edited, sprinkled with free stock photos from pexels.com.
+
+Integrating the webform on github pages was a bit of research, but others had done it before.
+
+Jekyll/ruby/dependencies are annoying, but work after you jiggle it enough.
+
+-i
+
+-- default as follows
 Agency Jekyll theme
 ====================
 
