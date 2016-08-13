@@ -2,7 +2,7 @@
 title: Technology Strategy
 subtitle:
 layout: default
-modal-id: 7
+modal-id: 8
 date: 2016-08-12
 img: strategy.jpg
 thumbnail: strategy-thumbnail.jpg

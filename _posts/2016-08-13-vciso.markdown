@@ -2,7 +2,7 @@
 title: CISO Advisory
 subtitle:
 layout: default
-modal-id: 8
+modal-id: 9
 date: 2016-08-12
 img: ciso.jpg
 thumbnail: ciso-thumbnail.jpg

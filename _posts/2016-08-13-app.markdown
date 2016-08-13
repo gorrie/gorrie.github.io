@@ -3,7 +3,7 @@ title: Application Security
 subtitle:
 layout: default
 modal-id: 1
-date: 2016-08-12
+date: 2016-08-13
 img: app.jpg
 thumbnail: app-thumbnail.jpg
 alt: image-alt
