@@ -46,8 +46,8 @@ people:
 social:
   - title: twitter
     url: http://twitter.com/lockednet
-#  - title: linkedin
-#    url: https://www.linkedin.com/company/locked-networks
+  - title: linkedin
+    url: https://www.linkedin.com/company/locked-networks
   - title: google-plus
     url: https://plus.google.com/+LockedNetworks
 #  - title: bitbucket
