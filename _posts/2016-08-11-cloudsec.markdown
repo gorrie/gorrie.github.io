@@ -3,13 +3,9 @@ title: Cloud Security Strategy
 subtitle:
 layout: default
 modal-id: 3
-date: 2016-08-12
 img: cloud.jpg
 thumbnail: cloud-thumbnail.jpg
 alt: image-alt
-project-date:
-client: Cloud vendor
-category:
-description: Adoption of agile security practices to provide assurance to compliance and client environments.  All the more important to plan effectively when adopting a hybrid approach.
+description: Adoption of agile security practices to provide assurance to compliance and client environments.  Effective planning is all the more important when adopting a hybrid approach.
 
 ---
