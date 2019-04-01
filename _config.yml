@@ -17,8 +17,10 @@ people:
       url: https://twitter.com/gorrie
     - title: linkedin
       url: https://linkedin.com/in/gorrie
-    - title: google-plus
-      url: https://plus.google.com/+IanGorrie
+      title: instagram
+      url: https://www.instagram.com/iagorrie/
+      title: github
+      url: https://github.com/gorrie
 
 #- name: 
 #  pic: 2
@@ -48,8 +50,6 @@ social:
     url: http://twitter.com/lockednet
   - title: linkedin
     url: https://www.linkedin.com/company/lockednetworks
-  - title: google-plus
-    url: https://plus.google.com/+LockedNetworks
 #  - title: bitbucket
 #    url: http://bitbucket.org/jekyll
 #  - title: github
