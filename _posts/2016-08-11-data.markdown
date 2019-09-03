@@ -3,13 +3,12 @@ title: Data Programs
 subtitle:
 layout: default
 modal-id: 4
-date: 2016-08-12
 img: data.jpg
 thumbnail: data-thumbnail.jpg
 alt: image-alt
 project-date:
 client:
 category:
-description: Leveraging modern platforms to answer questions of interest in security, analytics, maturity, and risk
+description: Leveraging modern platforms to answer questions of interest in security, analytics, maturity, and risk.  Having a viable big data program to answer critical questions is key to the modern business.
 
 ---

@@ -3,13 +3,12 @@ title: Internet
 subtitle:
 layout: default
 modal-id: 5
-date: 2016-08-12
 img: internet.jpg
 thumbnail: internet-thumbnail.jpg
 alt: image-alt
 project-date:
 client:
 category:
-description: Assembling technology to enable clients to use the web, conduct commerce, use data, and communicate.
+description: Assembling technology to enable clients to use the web, conduct commerce, use data, and communicate safely and effectively.
 
 ---

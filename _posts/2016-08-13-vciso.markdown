@@ -1,15 +1,14 @@
 ---
-title: CISO Advisory
+title: vCSO Advisory
 subtitle:
 layout: default
 modal-id: 9
-date: 2016-08-12
 img: ciso.jpg
 thumbnail: ciso-thumbnail.jpg
 alt: image-alt
 project-date:
 client:
 category:
-description: Assisting in the role of a security officer, or in supplementing CISO teams, when a full time role is not required or additional efforts are needed.
+description: Chief Information Security Officer (CISO), Chief Security Officer (CSO), and Data Protection Officer (DPO) as a service.  Assisting in the role of a security officer, as a Data Protection Officer, or in supplementing CISO teams.
 
 ---
