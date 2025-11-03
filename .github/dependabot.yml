@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Enable version updates for bundler (Ruby dependencies)
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "ruby"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
