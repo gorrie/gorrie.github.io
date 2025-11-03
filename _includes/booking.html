@@ -14,40 +14,48 @@
                 </p>
 
                 <!-- Cal.com Inline Embed -->
-                <div id="cal-embed-main" style="width: 100%; height: 700px; overflow: auto; background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+                <div
+                    style="width:100%;height:700px;overflow:scroll;background:#fff;border-radius:8px;padding:20px;box-shadow:0 4px 8px rgba(0,0,0,0.1);"
+                    data-cal-link="gorrie/15min"
+                    data-cal-config='{"layout":"month_view","theme":"light"}'>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Cal.com Embed Script -->
-<script>
-(function (C, A, L) {
-    let p = function (a, ar) { a.q.push(ar); };
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) {a.q.push(ar);};
     let d = C.document;
     C.Cal = C.Cal || function () {
-        let cal = C.Cal;
-        let ar = arguments;
-        if (!cal.q) { cal.q = []; }
-        cal.q.push(ar);
-        if (ar[0] === "init") {
-            cal.q = [];
-            p(cal, ["init", ar[1]]);
-        }
-        return cal;
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.q) {
+        cal.q = [];
+      }
+      if (ar[0] === "init") {
+        const api = function () {
+          p(api, arguments);
+        };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if(typeof ar[1] === "string"){C.Cal.ns = C.Cal.ns || {};C.Cal.ns[namespace] = api;p(api, ar);return;};
+        p(cal, ar);
+        return;
+      }
+      cal.q.push(ar);
     };
     let s = d.createElement("script");
     s.src = A;
     s.async = true;
     s.onload = function () {
-        C.Cal("init", { origin: L });
-        C.Cal("inline", {
-            elementOrSelector: "#cal-embed-main",
-            calLink: "gorrie/15min",
-            config: { theme: "light" }
-        });
+      if(typeof C.Cal.__css !== "undefined"){return;}
+      C.Cal("init", { origin: L });
+      C.Cal.__css = true;
     };
     let t = d.getElementsByTagName("script")[0];
     t.parentNode.insertBefore(s, t);
-})(window, "https://cal.com/embed.js", "https://cal.com");
+  })(window, "https://app.cal.com/embed/embed.js", "https://cal.com");
 </script>
