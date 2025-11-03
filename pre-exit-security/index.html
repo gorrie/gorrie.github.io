@@ -446,9 +446,10 @@ title: Pre-Exit Security Readiness
                     <p style="font-size: 18px; margin-bottom: 30px;">
                         Security issues discovered late in due diligence cost you. Start your pre-exit security sprint today.
                     </p>
-                    <a href="https://cal.com/gorrie" class="btn btn-xl" target="_blank">Schedule Assessment</a>
-                    <br><br>
-                    <p style="font-size: 14px; opacity: 0.9;">60-minute readiness consultation: $250 | Full sprint engagement custom priced</p>
+                    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 30px;">60-minute readiness consultation: $250 | Select a time below:</p>
+
+                    <!-- Cal.com Inline Embed -->
+                    <div id="cal-embed-exit" style="width: 100%; height: 700px; overflow: auto; background: #fff; border-radius: 8px; padding: 20px;"></div>
                 </div>
             </div>
         </div>
@@ -465,3 +466,35 @@ title: Pre-Exit Security Readiness
         </div>
     </div>
 </section>
+
+<!-- Cal.com Embed Script -->
+<script>
+(function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.q) { cal.q = []; }
+        cal.q.push(ar);
+        if (ar[0] === "init") {
+            cal.q = [];
+            p(cal, ["init", ar[1]]);
+        }
+        return cal;
+    };
+    let s = d.createElement("script");
+    s.src = A;
+    s.async = true;
+    s.onload = function () {
+        C.Cal("init", { origin: L });
+        C.Cal("inline", {
+            elementOrSelector: "#cal-embed-exit",
+            calLink: "gorrie",
+            config: { theme: "light" }
+        });
+    };
+    let t = d.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(s, t);
+})(window, "https://cal.com/embed.js", "https://cal.com");
+</script>
