@@ -23,14 +23,18 @@ people:
     - title: youtube
       url: https://youtube.com/@IanGorrie
 
-# Social networks usernames
+# Social networks usernames (footer icons)
 social:
   - title: twitter
-    url: http://twitter.com/gorrie
+    url: https://twitter.com/gorrie
   - title: linkedin
     url: https://www.linkedin.com/in/gorrie
+  - title: instagram
+    url: https://instagram.com/iagorrie
   - title: github
     url: https://github.com/gorrie
+  - title: youtube
+    url: https://youtube.com/@IanGorrie
 
 # Postal address
 address:
