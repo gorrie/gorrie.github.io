@@ -1,0 +1,69 @@
+<!-- Credibility Section -->
+    <section id="credibility" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Why Work With Me</h2>
+                    <h3 class="section-subheading text-muted">30 years of expertise, proven track record, and active engagement with the security community.</h3>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-center">What Clients Say</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for testimonial in site.testimonials %}
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p class="large text-muted">"{{ testimonial.quote }}"</p>
+                        <p><strong>{{ testimonial.name }}</strong>{% if testimonial.title %}<br><em>{{ testimonial.title }}</em>{% endif %}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Professional Contributions -->
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-12">
+                    <h3 class="text-center">Professional Development & Contributions</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for contribution in site.contributions %}
+                <div class="col-md-6">
+                    <div class="contribution">
+                        <h4><strong>{{ contribution.org }}</strong></h4>
+                        <p><em>{{ contribution.role }}</em></p>
+                        <p class="text-muted">{{ contribution.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Speaking Engagements -->
+            {% if site.speaking %}
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-lg-12">
+                    <h3 class="text-center">Speaking Engagements</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for talk in site.speaking %}
+                <div class="col-md-6">
+                    <div class="speaking">
+                        <h4><strong>{{ talk.event }}</strong> ({{ talk.year }})</h4>
+                        <p><em>{{ talk.location }}</em></p>
+                        <p>"{{ talk.title }}"</p>
+                        {% if talk.link %}
+                        <p><a href="{{ talk.link }}" target="_blank">View Recording →</a></p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </section>

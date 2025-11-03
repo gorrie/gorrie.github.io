@@ -2,9 +2,9 @@ url: https://locked.net
 # baseurl:
 
 # Site settings
-title: Locked Networks
+title: Locked
 email: contact@locked.net
-description: "Locked Networks is a technology services firm that solves problems for business and other entities. We tackle problems in cloud, information security, enterprise, open source security, physical, training, or wherever help is needed."
+description: "Strategic security leadership for organizations that can't afford to get it wrong. 30 years of expertise in application security, surveillance law, and AI governance."
 
 # Team names, titles and social links
 people:
@@ -20,44 +20,102 @@ people:
       url: https://instagram.com/iagorrie/
     - title: github
       url: https://github.com/gorrie
+    - title: youtube
+      url: https://youtube.com/@IanGorrie
 
-#- name:
-#  pic: 2
-# position:
-#  social:
-#    - title: twitter
-#      url: #
-#    - title: facebook
-#      url: #
-#     - title: linkedin
-#       url:
-
-#- name: Diana Petersen
-#  pic: 3
-#  position: Lead Developer
-#  social:
-#    - title: twitter
-#      url: #
-#    - title: facebook
-#      url: #
-#    - title: google-plus
-#      url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks usernames
 social:
   - title: twitter
-    url: http://twitter.com/lockednet
+    url: http://twitter.com/gorrie
   - title: linkedin
-    url: https://www.linkedin.com/company/lockednetworks
-#  - title: bitbucket
-#    url: http://bitbucket.org/jekyll
-#  - title: github
-#    url: http://github.com/jekyll
+    url: https://www.linkedin.com/in/gorrie
+  - title: github
+    url: https://github.com/gorrie
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
-  - line: 1425 Broadway \\#20-4405
+  - line: 1425 Broadway \#20-4405
   - line: Seattle, WA 98122
+
+# Services
+services:
+  - icon: fas fa-shield-alt
+    title: Virtual CISO Services
+    description: Fractional CISO expertise for organizations that need strategic security leadership without a full-time executive. I assess your current posture, develop roadmaps, and guide implementation.
+
+  - icon: fas fa-brain
+    title: AI Security & Governance
+    description: Navigate the security and compliance challenges of AI deployment. From LLM security to bias testing to regulatory compliance, I help you build AI systems responsibly.
+
+  - icon: fas fa-balance-scale
+    title: Privacy & Surveillance Law
+    description: Expert guidance on GDPR, CCPA, CPRA, and emerging surveillance regulations. I've spoken at the FTC and worked with regulators—I know how they think.
+
+  - icon: fas fa-cogs
+    title: Security Program Development
+    description: Build or mature your security program with proven frameworks. OWASP, NIST, ISO 27001—I've implemented them all and can tailor them to your organization.
+
+# Testimonials
+testimonials:
+  - name: Jerome Foster, MSISA
+    quote: "Ian's assessment work was invaluable. His expertise in identifying application vulnerabilities and implementing security controls significantly improved our security program's maturity."
+
+  - name: Tom Lindeman
+    title: President & CEO, Shinobi USA, Inc.
+    quote: "Ian brings serious technical acumen combined with passion and problem-solving abilities developed over 30 years in software. He has strong potential for CISO or leadership roles."
+
+# Professional Contributions
+contributions:
+  - org: OWASP
+    role: Seattle Chapter Leader (Multiple Years)
+    description: Organized monthly meetings, brought industry speakers, promoted application security best practices.
+
+  - org: (ISC)²
+    role: Community Contributor
+    description: Advanced knowledge through CISSP program covering eight security domains.
+
+  - org: ISACA
+    role: Community Participant
+    description: Expertise in security governance, risk management, audit, and compliance through CISM and CISA programs.
+
+  - org: ToorCamp/ToorCon
+    role: Hacker Conference Participant
+    description: Active engagement with offensive security research and emerging threats.
+
+# Speaking Engagements
+speaking:
+  - event: Federal Trade Commission Workshop
+    year: 2016
+    location: Washington, DC
+    title: "Avoiding Catastrophe: An Introduction to OWASP Proactive Controls"
+    link: https://digitalcommons.law.uw.edu/ftc/3/
+
+  - event: Official Cybersecurity Summit
+    year: 2017
+    location: Seattle, WA
+    title: "Application Security & OWASP Frameworks"
+
+# Engagement Models
+engagement_models:
+  - name: Early-Stage Startup Partnership
+    cash: "$2K-5K/month"
+    equity: "0.25-0.50%"
+    best_for: "Pre-seed, seed-stage companies with limited cash"
+
+  - name: Growth-Stage Partnership
+    cash: "$8K-12K/month"
+    equity: "0.10-0.25%"
+    best_for: "Series A/B companies scaling security programs"
+
+  - name: Pre-Exit Partnership
+    cash: "$10K-15K/month"
+    equity: "0.10-0.15% + exit bonus"
+    best_for: "Companies preparing for M&A or IPO (12-24 month horizon)"
+
+  - name: Bootstrapped/Profitable Partnership
+    cash: "$5K-8K/month"
+    equity: "Profit share (no equity)"
+    best_for: "Self-funded companies where security enables revenue"
 
 # Build settings
 markdown: kramdown

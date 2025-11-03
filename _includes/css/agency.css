@@ -300,6 +300,14 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .intro-text .intro-subheading {
+    margin-bottom: 25px;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -321,6 +329,13 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+    }
+
+    header .intro-text .intro-subheading {
+        margin-bottom: 25px;
+        font-family: {{ site.data.template.font.secondary }};
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 
