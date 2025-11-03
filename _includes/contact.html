@@ -13,35 +13,68 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="https://formspree.io/f/mvovzand" method="POST" id="contactForm">
+                    <form id="contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" name="name" required>
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" name="name" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" name="email" required>
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="_replyto" name="_replyto" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" name="phone" required>
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" name="message" required></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" name="message" rows="8" required></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                                <p class="help-block text-muted" style="margin-top: 10px;">Submissions are securely processed by Formspree.</p>
+                                <div id="success" style="margin-bottom: 15px;"></div>
+                                <button type="submit" class="btn btn-xl" id="sendButton">Send Message</button>
                             </div>
                         </div>
                     </form>
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            var form = this;
+                            var button = document.getElementById('sendButton');
+                            var successDiv = document.getElementById('success');
+
+                            button.disabled = true;
+                            button.textContent = 'Sending...';
+
+                            var formData = new FormData(form);
+
+                            fetch('https://formspree.io/f/mvovzand', {
+                                method: 'POST',
+                                body: formData,
+                                headers: {
+                                    'Accept': 'application/json'
+                                }
+                            }).then(function(response) {
+                                if (response.ok) {
+                                    successDiv.innerHTML = '<div class="alert alert-success"><strong>Thank you!</strong> Your message has been sent successfully.</div>';
+                                    form.reset();
+                                } else {
+                                    throw new Error('Form submission failed');
+                                }
+                            }).catch(function(error) {
+                                successDiv.innerHTML = '<div class="alert alert-danger"><strong>Oops!</strong> There was a problem sending your message. Please try again.</div>';
+                            }).finally(function() {
+                                button.disabled = false;
+                                button.textContent = 'Send Message';
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>
