@@ -99,27 +99,6 @@ speaking:
     location: Seattle, WA
     title: "Application Security & OWASP Frameworks"
 
-# Engagement Models
-engagement_models:
-  - name: Early-Stage Startup Partnership
-    cash: "$2K-5K/month"
-    equity: "0.25-0.50%"
-    best_for: "Pre-seed, seed-stage companies with limited cash"
-
-  - name: Growth-Stage Partnership
-    cash: "$8K-12K/month"
-    equity: "0.10-0.25%"
-    best_for: "Series A/B companies scaling security programs"
-
-  - name: Pre-Exit Partnership
-    cash: "$10K-15K/month"
-    equity: "0.10-0.15% + exit bonus"
-    best_for: "Companies preparing for M&A or IPO (12-24 month horizon)"
-
-  - name: Bootstrapped/Profitable Partnership
-    cash: "$5K-8K/month"
-    equity: "Profit share (no equity)"
-    best_for: "Self-funded companies where security enables revenue"
 
 # Build settings
 markdown: kramdown
