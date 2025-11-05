@@ -1,0 +1,585 @@
+---
+layout: default
+title: Get Your Custom Security Proposal
+---
+
+<style>
+    body.index {
+        background: #f8f9fa;
+    }
+
+    .proposal-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 80px 0 60px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .proposal-hero h1 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .proposal-hero p {
+        font-size: 20px;
+        color: #e0e0e0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .form-section {
+        background: #fff;
+        max-width: 800px;
+        margin: -40px auto 60px;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 10;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .form-group .required {
+        color: #dc3545;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="url"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #667eea;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .radio-group {
+        margin: 15px 0;
+    }
+
+    .radio-group label {
+        display: block;
+        padding: 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: normal;
+    }
+
+    .radio-group input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .radio-group label:hover {
+        border-color: #667eea;
+        background: #f8f9ff;
+    }
+
+    .radio-group input[type="radio"]:checked + label {
+        border-color: #667eea;
+        background: #f0f3ff;
+        font-weight: 600;
+    }
+
+    .section-divider {
+        border-top: 2px solid #e0e0e0;
+        margin: 40px 0 30px;
+        padding-top: 30px;
+    }
+
+    .section-divider h3 {
+        color: #667eea;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        border: none;
+        padding: 16px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        transition: transform 0.2s;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .submit-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .result-section {
+        display: none;
+        background: #fff;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    .result-section.show {
+        display: block;
+    }
+
+    .result-section h2 {
+        color: #667eea;
+        margin-bottom: 20px;
+    }
+
+    .pamphlet-preview {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+        margin: 30px 0;
+        border-left: 4px solid #667eea;
+    }
+
+    .download-btn {
+        display: inline-block;
+        background: #28a745;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 10px 10px 10px 0;
+        transition: transform 0.2s;
+    }
+
+    .download-btn:hover {
+        transform: translateY(-2px);
+        color: #fff;
+    }
+
+    .privacy-note {
+        font-size: 14px;
+        color: #666;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+<section class="proposal-hero">
+    <div class="container">
+        <h1>Get Your Custom Security Proposal</h1>
+        <p>Answer a few questions and receive tailored security service recommendations and pricing</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="form-section">
+        <form id="proposalForm">
+            <!-- Section 1: Basic Information -->
+            <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="website">Company Website</label>
+                <input type="url" id="website" name="website" placeholder="https://">
+            </div>
+
+            <!-- Section 2: Company Profile -->
+            <div class="section-divider">
+                <h3>Company Profile</h3>
+            </div>
+
+            <div class="form-group">
+                <label for="stage">Company Stage <span class="required">*</span></label>
+                <select id="stage" name="stage" required>
+                    <option value="">Select stage...</option>
+                    <option value="pre-seed">Pre-seed (Bootstrapped, &lt;$500K raised)</option>
+                    <option value="seed">Seed ($500K-$2M raised)</option>
+                    <option value="series-a">Series A ($2M-$10M raised)</option>
+                    <option value="series-b">Series B ($10M-$30M raised)</option>
+                    <option value="series-c">Series C+ ($30M+ raised)</option>
+                    <option value="established">Established/Public</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Company Size</label>
+                <select id="size" name="size">
+                    <option value="">Select size...</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201-1000">201-1000 employees</option>
+                    <option value="1000+">1000+ employees</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="industry">Industry Focus <span class="required">*</span></label>
+                <select id="industry" name="industry" required>
+                    <option value="">Select industry...</option>
+                    <option value="ai-ml">AI/Machine Learning</option>
+                    <option value="saas">SaaS/Enterprise Software</option>
+                    <option value="fintech">FinTech/Financial Services</option>
+                    <option value="healthtech">HealthTech/Healthcare</option>
+                    <option value="ecommerce">E-commerce/Consumer</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Section 3: Security Needs -->
+            <div class="section-divider">
+                <h3>Your Security Needs</h3>
+            </div>
+
+            <div class="form-group">
+                <label>Primary Security Challenge <span class="required">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" name="challenge" id="challenge-ai" value="ai-security" required>
+                    <label for="challenge-ai">AI security and governance (LLM security, AI bias, responsible AI)</label>
+
+                    <input type="radio" name="challenge" id="challenge-privacy" value="privacy-compliance">
+                    <label for="challenge-privacy">Privacy compliance (GDPR, CCPA, surveillance law)</label>
+
+                    <input type="radio" name="challenge" id="challenge-exit" value="pre-exit">
+                    <label for="challenge-exit">Pre-exit security readiness (M&A due diligence, acquisition prep)</label>
+
+                    <input type="radio" name="challenge" id="challenge-program" value="build-program">
+                    <label for="challenge-program">Building security program (Need fractional CISO, SOC 2, policies)</label>
+
+                    <input type="radio" name="challenge" id="challenge-incident" value="incident-response">
+                    <label for="challenge-incident">Security incident/breach response</label>
+
+                    <input type="radio" name="challenge" id="challenge-monitoring" value="threat-detection">
+                    <label for="challenge-monitoring">Threat detection and monitoring (Insider threats, fraud detection)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="timeline">Timeline <span class="required">*</span></label>
+                <select id="timeline" name="timeline" required>
+                    <option value="">Select timeline...</option>
+                    <option value="urgent">Urgent (Need help immediately, &lt;1 week)</option>
+                    <option value="near-term">Near-term (1-4 weeks)</option>
+                    <option value="planning">Planning (1-3 months)</option>
+                    <option value="exploring">Exploring (3-6 months)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="driver">What's driving this need?</label>
+                <textarea id="driver" name="driver" placeholder="e.g., Enterprise customer demanding SOC 2, Series A due diligence, regulatory inquiry..."></textarea>
+            </div>
+
+            <!-- Cloudflare Turnstile -->
+            <div class="form-group">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAB-oLR96mxCLkAel" data-theme="light"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Get My Custom Proposal</button>
+
+            <p class="privacy-note">
+                Your information is confidential and will only be used to provide your custom proposal.
+            </p>
+        </form>
+    </div>
+
+    <div class="result-section" id="resultSection">
+        <h2>Your Recommended Services</h2>
+        <div id="resultContent"></div>
+        <div style="margin-top: 40px; text-align: center;">
+            <h3>Ready to Discuss?</h3>
+            <p>Schedule a 15-minute consultation to review your custom proposal</p>
+            <a href="https://cal.com/gorrie/15min" class="download-btn" target="_blank">Schedule Call</a>
+        </div>
+    </div>
+</div>
+
+<!-- Cloudflare Turnstile Script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<!-- Form Logic -->
+<script>
+document.getElementById('proposalForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form values
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        stage: document.getElementById('stage').value,
+        industry: document.getElementById('industry').value,
+        challenge: document.querySelector('input[name="challenge"]:checked').value,
+        timeline: document.getElementById('timeline').value,
+        driver: document.getElementById('driver').value
+    };
+
+    // Determine which pamphlet to show based on challenge
+    let pamphletTitle, pamphletDescription, pamphletDetails, pdfLink;
+
+    switch(formData.challenge) {
+        case 'ai-security':
+            pamphletTitle = 'AI Security & Governance Services';
+            pamphletDescription = 'Based on your focus on AI security, we recommend our comprehensive AI governance program.';
+            pamphletDetails = `
+                <h4>Recommended Services:</h4>
+                <ul>
+                    <li><strong>AI Security Assessment</strong> - LLM security, prompt injection, data leakage analysis</li>
+                    <li><strong>AI Governance Framework</strong> - EU AI Act compliance, responsible AI policies</li>
+                    <li><strong>Model Risk Assessment</strong> - Bias detection, fairness evaluation</li>
+                    <li><strong>Enterprise AI Readiness</strong> - Customer-facing documentation and controls</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> 4-8 weeks</p>
+                <p><strong>Investment:</strong> ${getPricing(formData.stage, 'ai-security')}</p>
+            `;
+            pdfLink = '/downloads/ai-security-services.pdf';
+            break;
+
+        case 'privacy-compliance':
+            pamphletTitle = 'Privacy & Compliance Services';
+            pamphletDescription = 'Based on your privacy compliance needs, we recommend our regulatory readiness program.';
+            pamphletDetails = `
+                <h4>Recommended Services:</h4>
+                <ul>
+                    <li><strong>Privacy Assessment</strong> - GDPR, CCPA, CPRA compliance review</li>
+                    <li><strong>Policy Development</strong> - Privacy policies, cookie notices, DPAs</li>
+                    <li><strong>Cross-Border Transfers</strong> - Standard contractual clauses, adequacy decisions</li>
+                    <li><strong>Ongoing Compliance</strong> - Fractional privacy officer services</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> 2-6 weeks</p>
+                <p><strong>Investment:</strong> ${getPricing(formData.stage, 'privacy-compliance')}</p>
+            `;
+            pdfLink = '/downloads/privacy-compliance-services.pdf';
+            break;
+
+        case 'pre-exit':
+            pamphletTitle = 'Pre-Exit Security Readiness';
+            pamphletDescription = 'Based on your M&A timeline, we recommend our 30-day security sprint.';
+            pamphletDetails = `
+                <h4>30-Day Security Sprint:</h4>
+                <ul>
+                    <li><strong>Week 1:</strong> Security assessment from buyer's perspective</li>
+                    <li><strong>Week 2:</strong> Critical fixes and quick wins</li>
+                    <li><strong>Week 3:</strong> Documentation and policies</li>
+                    <li><strong>Week 4:</strong> Due diligence prep and data room organization</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> 30 days</p>
+                <p><strong>Investment:</strong> $35,000 - $50,000 (full sprint)</p>
+                <p><strong>Alternative:</strong> Assessment only ($12,000 - $18,000)</p>
+            `;
+            pdfLink = '/downloads/pre-exit-security.pdf';
+            break;
+
+        case 'build-program':
+            pamphletTitle = 'Fractional CISO Services';
+            pamphletDescription = 'Based on your need to build a security program, we recommend fractional CISO services.';
+            pamphletDetails = `
+                <h4>Recommended Services:</h4>
+                <ul>
+                    <li><strong>Security Program Development</strong> - Policies, procedures, controls</li>
+                    <li><strong>SOC 2 Readiness</strong> - Gap assessment and implementation</li>
+                    <li><strong>Vendor Security</strong> - Third-party risk management</li>
+                    <li><strong>Security Awareness</strong> - Team training and culture building</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Commitment:</strong> ${getHours(formData.stage)} hours/month</p>
+                <p><strong>Investment:</strong> ${getPricing(formData.stage, 'fractional-ciso')}/month</p>
+            `;
+            pdfLink = '/downloads/fractional-ciso-services.pdf';
+            break;
+
+        case 'threat-detection':
+            pamphletTitle = 'Surveillance & Threat Detection Services';
+            pamphletDescription = 'Based on your monitoring needs, we recommend our threat detection program.';
+            pamphletDetails = `
+                <h4>Recommended Services:</h4>
+                <ul>
+                    <li><strong>Insider Threat Detection</strong> - Employee monitoring (authorized)</li>
+                    <li><strong>Fraud Detection Systems</strong> - Anomaly detection, pattern analysis</li>
+                    <li><strong>Investigation Support</strong> - Digital forensics, incident analysis</li>
+                    <li><strong>Legal Framework Review</strong> - Compliance with monitoring laws</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> 2-4 weeks (design), ongoing monitoring</p>
+                <p><strong>Investment:</strong> $350-$450/hour (consulting)</p>
+                <p><strong>Alternative:</strong> Monthly retainer for ongoing monitoring</p>
+            `;
+            pdfLink = '/downloads/surveillance-threat-detection.pdf';
+            break;
+
+        case 'incident-response':
+            pamphletTitle = 'Incident Response Services';
+            pamphletDescription = 'Based on your urgent security incident, we recommend immediate response services.';
+            pamphletDetails = `
+                <h4>Immediate Response Services:</h4>
+                <ul>
+                    <li><strong>Incident Assessment</strong> - Scope, impact, root cause analysis</li>
+                    <li><strong>Containment & Remediation</strong> - Stop the bleeding, fix vulnerabilities</li>
+                    <li><strong>Forensic Investigation</strong> - Evidence collection, timeline reconstruction</li>
+                    <li><strong>Notification Support</strong> - Regulatory reporting, customer communication</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> Immediate (24-48 hour response)</p>
+                <p><strong>Investment:</strong> Double standard rate ($700-$900/hour)</p>
+                <p><strong>Note:</strong> Emergency response premium applies</p>
+            `;
+            pdfLink = '/downloads/incident-response-services.pdf';
+            break;
+
+        default:
+            pamphletTitle = 'Secure Computing Foundation';
+            pamphletDescription = 'Based on your needs, we recommend our comprehensive security assessment.';
+            pamphletDetails = `
+                <h4>Recommended Services:</h4>
+                <ul>
+                    <li><strong>Security Assessment</strong> - Comprehensive infrastructure and application review</li>
+                    <li><strong>Vulnerability Management</strong> - Identify and prioritize security gaps</li>
+                    <li><strong>Security Roadmap</strong> - Strategic plan for security maturity</li>
+                    <li><strong>Quick Wins Implementation</strong> - High-impact, low-effort improvements</li>
+                </ul>
+                <h4>Typical Engagement:</h4>
+                <p><strong>Timeline:</strong> 2-4 weeks</p>
+                <p><strong>Investment:</strong> ${getPricing(formData.stage, 'foundation')}</p>
+            `;
+            pdfLink = '/downloads/secure-computing-foundation.pdf';
+    }
+
+    // Display results
+    const resultContent = document.getElementById('resultContent');
+    resultContent.innerHTML = `
+        <div class="pamphlet-preview">
+            <h3>${pamphletTitle}</h3>
+            <p style="font-size: 18px; margin: 20px 0;">${pamphletDescription}</p>
+            ${pamphletDetails}
+        </div>
+        <div style="margin-top: 30px;">
+            <p><strong>Next Steps:</strong></p>
+            <ol>
+                <li>Review the recommended services above</li>
+                <li>Schedule a 15-minute call to discuss your specific situation</li>
+                <li>We'll answer your questions and refine the proposal</li>
+                <li>Agree on scope, timeline, and start immediately</li>
+            </ol>
+        </div>
+    `;
+
+    // Hide form, show results
+    document.querySelector('.form-section').style.display = 'none';
+    document.getElementById('resultSection').classList.add('show');
+
+    // Scroll to results
+    document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+
+    // Track in analytics
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'proposal_requested', {
+            'challenge': formData.challenge,
+            'stage': formData.stage,
+            'timeline': formData.timeline
+        });
+    }
+});
+
+// Helper function to determine pricing based on stage
+function getPricing(stage, service) {
+    const pricing = {
+        'ai-security': {
+            'pre-seed': '$8,000 - $12,000',
+            'seed': '$15,000 - $25,000',
+            'series-a': '$25,000 - $40,000',
+            'series-b': '$40,000 - $60,000',
+            'series-c': '$50,000 - $80,000',
+            'established': 'Custom (typically $75,000+)'
+        },
+        'privacy-compliance': {
+            'pre-seed': '$5,000 - $8,000',
+            'seed': '$8,000 - $15,000',
+            'series-a': '$15,000 - $25,000',
+            'series-b': '$25,000 - $40,000',
+            'series-c': '$40,000 - $60,000',
+            'established': 'Custom (typically $60,000+)'
+        },
+        'fractional-ciso': {
+            'pre-seed': '$3,000 - $5,000',
+            'seed': '$5,000 - $8,000',
+            'series-a': '$7,000 - $12,000',
+            'series-b': '$12,000 - $18,000',
+            'series-c': '$15,000 - $25,000',
+            'established': 'Custom (typically $20,000+)'
+        },
+        'foundation': {
+            'pre-seed': '$5,000 - $10,000',
+            'seed': '$10,000 - $18,000',
+            'series-a': '$18,000 - $30,000',
+            'series-b': '$30,000 - $50,000',
+            'series-c': '$50,000 - $75,000',
+            'established': 'Custom (typically $75,000+)'
+        }
+    };
+
+    return pricing[service] && pricing[service][stage]
+        ? pricing[service][stage]
+        : 'Custom pricing based on scope';
+}
+
+// Helper function to determine hours for fractional CISO
+function getHours(stage) {
+    const hours = {
+        'pre-seed': '8-12',
+        'seed': '12-20',
+        'series-a': '20-30',
+        'series-b': '30-40',
+        'series-c': '40+',
+        'established': '40+'
+    };
+    return hours[stage] || '20-30';
+}
+</script>
