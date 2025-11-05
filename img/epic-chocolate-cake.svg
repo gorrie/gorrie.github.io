@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </radialGradient>
+
+    <linearGradient id="cake1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a2c2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a1c1a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="cake2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a3c3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a2c2a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="ganache" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1810;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3d2820;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1810;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Plate -->
+  <ellipse cx="400" cy="480" rx="200" ry="30" fill="#e9ecef" opacity="0.8"/>
+  <ellipse cx="400" cy="478" rx="200" ry="28" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Cake bottom layer -->
+  <g filter="url(#shadow)">
+    <!-- Bottom cake layer - sides -->
+    <path d="M 200 420 L 200 450 Q 400 470 600 450 L 600 420 Q 400 440 200 420" fill="url(#cake1)"/>
+    <!-- Bottom cake layer - top -->
+    <ellipse cx="400" cy="420" rx="200" ry="20" fill="url(#cake2)"/>
+  </g>
+
+  <!-- Middle ganache drip -->
+  <g opacity="0.9">
+    <path d="M 220 418 Q 215 425 218 432" fill="url(#ganache)" stroke="none"/>
+    <path d="M 280 415 Q 275 428 280 438" fill="url(#ganache)" stroke="none"/>
+    <path d="M 350 413 Q 348 430 353 442" fill="url(#ganache)" stroke="none"/>
+    <path d="M 420 413 Q 418 428 422 440" fill="url(#ganache)" stroke="none"/>
+    <path d="M 490 414 Q 488 426 492 436" fill="url(#ganache)" stroke="none"/>
+    <path d="M 560 416 Q 558 424 562 432" fill="url(#ganache)" stroke="none"/>
+  </g>
+
+  <!-- Cake top layer -->
+  <g filter="url(#shadow)">
+    <!-- Top cake layer - sides -->
+    <path d="M 220 370 L 220 400 Q 400 420 580 400 L 580 370 Q 400 390 220 370" fill="url(#cake1)"/>
+    <!-- Top cake layer - top -->
+    <ellipse cx="400" cy="370" rx="180" ry="18" fill="url(#cake2)"/>
+  </g>
+
+  <!-- Ganache top -->
+  <g filter="url(#shadow)">
+    <!-- Ganache drips -->
+    <path d="M 240 368 Q 235 375 238 382" fill="url(#ganache)" stroke="none"/>
+    <path d="M 300 366 Q 298 378 302 386" fill="url(#ganache)" stroke="none"/>
+    <path d="M 370 365 Q 368 380 373 388" fill="url(#ganache)" stroke="none"/>
+    <path d="M 440 365 Q 438 378 442 386" fill="url(#ganache)" stroke="none"/>
+    <path d="M 510 366 Q 508 376 512 384" fill="url(#ganache)" stroke="none"/>
+
+    <!-- Top ganache layer -->
+    <ellipse cx="400" cy="365" rx="180" ry="18" fill="url(#ganache)"/>
+
+    <!-- Ganache shine -->
+    <ellipse cx="400" cy="363" rx="140" ry="12" fill="#4a3228" opacity="0.6"/>
+    <ellipse cx="380" cy="360" rx="60" ry="6" fill="#8b6f5c" opacity="0.4"/>
+  </g>
+
+  <!-- Decorative chocolate shavings on top -->
+  <g opacity="0.8">
+    <rect x="360" y="350" width="15" height="3" rx="1" fill="#5a3c2a" transform="rotate(-20 367 351)"/>
+    <rect x="390" y="348" width="12" height="3" rx="1" fill="#5a3c2a" transform="rotate(15 396 349)"/>
+    <rect x="420" y="350" width="18" height="3" rx="1" fill="#5a3c2a" transform="rotate(-10 429 351)"/>
+    <rect x="450" y="349" width="14" height="3" rx="1" fill="#5a3c2a" transform="rotate(25 457 350)"/>
+  </g>
+
+  <!-- Cherry on top -->
+  <g filter="url(#shadow)">
+    <ellipse cx="400" cy="340" rx="12" ry="11" fill="#8b0000"/>
+    <ellipse cx="403" cy="338" rx="5" ry="4" fill="#a52a2a" opacity="0.6"/>
+    <path d="M 400 340 Q 395 330 393 320" stroke="#2d5016" stroke-width="2" fill="none"/>
+    <ellipse cx="393" cy="318" rx="4" ry="3" fill="#4a7023"/>
+  </g>
+
+  <!-- Steam lines -->
+  <g opacity="0.3" stroke="#999" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 320 330 Q 315 310 320 290">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 400 325 Q 395 305 400 285">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 480 330 Q 485 310 480 290">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="550" font-family="'Courier New', monospace" font-size="20" fill="#667eea" text-anchor="middle" font-weight="bold">
+    THE CAKE IS NOT A LIE
+  </text>
+
+  <text x="400" y="575" font-family="'Courier New', monospace" font-size="14" fill="#666" text-anchor="middle">
+    Generated with AI • Recipe Tested by Humans
+  </text>
+</svg>
