@@ -54,6 +54,12 @@
       if(typeof C.Cal.__css !== "undefined"){return;}
       C.Cal("init", { origin: L });
       C.Cal.__css = true;
+      // Initialize the inline embed for the booking section
+      C.Cal("inline", {
+        elementOrSelector: "[data-cal-link='gorrie/15min']",
+        calLink: "gorrie/15min",
+        config: {layout: "month_view", theme: "light"}
+      });
     };
     let t = d.getElementsByTagName("script")[0];
     t.parentNode.insertBefore(s, t);
