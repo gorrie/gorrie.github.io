@@ -1,0 +1,16 @@
+name = "proposal-handler"
+main = "proposal-handler.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (secrets) must be set via:
+# npx wrangler secret put SENDGRID_API_KEY
+# npx wrangler secret put AIRTABLE_API_TOKEN
+# npx wrangler secret put TURNSTILE_SECRET_KEY
+# OR set in Cloudflare Dashboard after deployment
+
+# Non-secret variables can be set here:
+[vars]
+SENDGRID_FROM_EMAIL = "contact@locked.net"
+SENDGRID_FROM_NAME = "Ian Gorrie - Locked Advisory"
+AIRTABLE_BASE_ID = "appcEgtFJKEsPBPVa"
+AIRTABLE_TABLE_NAME = "tblwR5h43KnOnanKE"
