@@ -1,6 +1,6 @@
 /**
  * Cloudflare Worker: Proposal Form Handler
- * VERSION: 2.0 - WITH AIRTABLE FIELD MAPPING
+ * VERSION: 2.1 - AUTO-DEPLOYED FROM GITHUB
  * Purpose: Process qualification form submissions, validate Turnstile, store in Airtable, send via SendGrid
  */
 
