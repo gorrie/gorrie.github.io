@@ -1,0 +1,21 @@
+name: Deploy Worker
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'workers/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy proposal-handler Worker
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: 'workers'
