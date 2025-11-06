@@ -406,10 +406,75 @@ function determinePamphletType(challenge) {
 }
 
 /**
+ * Map form values to Airtable select field values
+ */
+function mapToAirtableValues(data, pamphletType) {
+  // Map Company Stage
+  const stageMap = {
+    'pre-seed': 'Pre-seed',
+    'seed': 'Seed',
+    'series-a': 'Series A',
+    'series-b': 'Series B',
+    'series-c': 'Series C+',
+    'established': 'Established'
+  };
+
+  // Map Industry
+  const industryMap = {
+    'ai-ml': 'AI/ML',
+    'saas': 'SaaS',
+    'fintech': 'FinTech',
+    'healthtech': 'HealthTech',
+    'ecommerce': 'E-commerce',
+    'cybersecurity': 'Cybersecurity',
+    'other': 'Other'
+  };
+
+  // Map Primary Challenge
+  const challengeMap = {
+    'ai-security': 'AI Security',
+    'privacy-compliance': 'Privacy Compliance',
+    'pre-exit': 'Pre-Exit Security',
+    'build-program': 'Build Program',
+    'incident-response': 'Incident Response',
+    'threat-detection': 'Threat Detection'
+  };
+
+  // Map Timeline
+  const timelineMap = {
+    'urgent': 'Urgent (<1 week)',
+    'near-term': 'Near-term (1-4 weeks)',
+    'planning': 'Planning (1-3 months)',
+    'exploring': 'Exploring (3-6 months)'
+  };
+
+  // Map Pamphlet Type
+  const pamphletMap = {
+    'ai-security': 'AI Security',
+    'privacy-compliance': 'Privacy Compliance',
+    'pre-exit': 'Pre-Exit',
+    'build-program': 'Fractional CISO',
+    'incident-response': 'Incident Response',
+    'threat-detection': 'Threat Detection'
+  };
+
+  return {
+    stage: stageMap[data.stage] || data.stage,
+    industry: industryMap[data.industry] || data.industry,
+    challenge: challengeMap[data.challenge] || data.challenge,
+    timeline: timelineMap[data.timeline] || data.timeline,
+    pamphlet: pamphletMap[pamphletType] || 'Secure Foundation'
+  };
+}
+
+/**
  * Store lead in Airtable
  */
 async function storeInAirtable(data, pamphletType, env) {
   const url = `https://api.airtable.com/v0/${env.AIRTABLE_BASE_ID}/${env.AIRTABLE_TABLE_NAME}`;
+
+  // Map form values to Airtable expected values
+  const mapped = mapToAirtableValues(data, pamphletType);
 
   const record = {
     fields: {
@@ -417,13 +482,13 @@ async function storeInAirtable(data, pamphletType, env) {
       'Email': data.email,
       'Company': data.company || '',
       'Website': data.website || '',
-      'Company Stage': data.stage || '',
+      'Company Stage': mapped.stage || '',
       'Company Size': data.size || '',
-      'Industry': data.industry || '',
-      'Primary Challenge': data.challenge || '',
-      'Timeline': data.timeline || '',
+      'Industry': mapped.industry || '',
+      'Primary Challenge': mapped.challenge || '',
+      'Timeline': mapped.timeline || '',
       'What\'s Driving This': data.driver || '',
-      'Pamphlet Sent': pamphletType,
+      'Pamphlet Sent': mapped.pamphlet,
       'Status': 'New',
       'Email Sent Date': new Date().toISOString().split('T')[0]
     }
