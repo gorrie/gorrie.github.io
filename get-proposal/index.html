@@ -422,20 +422,23 @@ document.getElementById('proposalForm').addEventListener('submit', async functio
                     'timeline': formDataObj.get('timeline')
                 });
             }
+            return; // Success - stop execution
         } else {
             // Show error
             alert('Error: ' + (result.error || 'Failed to submit form. Please try again.'));
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
+            return; // Stop execution after error
         }
     } catch (error) {
         console.error('Submission error:', error);
         alert('Network error. Please check your connection and try again.');
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
+        return; // Stop execution after error
     }
 
-    // For reference: original form data structure
+    // Dead code below - should never be reached (old client-side proposal generation)
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
