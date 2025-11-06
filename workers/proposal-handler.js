@@ -1,5 +1,6 @@
 /**
  * Cloudflare Worker: Proposal Form Handler
+ * VERSION: 2.0 - WITH AIRTABLE FIELD MAPPING
  * Purpose: Process qualification form submissions, validate Turnstile, store in Airtable, send via SendGrid
  */
 
@@ -474,7 +475,10 @@ async function storeInAirtable(data, pamphletType, env) {
   const url = `https://api.airtable.com/v0/${env.AIRTABLE_BASE_ID}/${env.AIRTABLE_TABLE_NAME}`;
 
   // Map form values to Airtable expected values
+  console.log('Original data.stage:', data.stage);
   const mapped = mapToAirtableValues(data, pamphletType);
+  console.log('Mapped stage:', mapped.stage);
+  console.log('Full mapped object:', JSON.stringify(mapped));
 
   const record = {
     fields: {
