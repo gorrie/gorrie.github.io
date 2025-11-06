@@ -385,6 +385,9 @@ document.getElementById('proposalForm').addEventListener('submit', async functio
 
         const result = await response.json();
 
+        // Log full response for debugging
+        console.log('Worker response:', result);
+
         if (result.success) {
             // Show success message
             const resultContent = document.getElementById('resultContent');
@@ -424,15 +427,18 @@ document.getElementById('proposalForm').addEventListener('submit', async functio
             }
             return; // Success - stop execution
         } else {
-            // Show error
-            alert('Error: ' + (result.error || 'Failed to submit form. Please try again.'));
+            // Show error with details
+            const errorMsg = result.error || 'Failed to submit form';
+            const errorDetails = result.details ? '\n\nDetails: ' + result.details : '';
+            alert('Error: ' + errorMsg + errorDetails + '\n\nCheck browser console for more info.');
+            console.error('Worker error:', result);
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
             return; // Stop execution after error
         }
     } catch (error) {
         console.error('Submission error:', error);
-        alert('Network error. Please check your connection and try again.');
+        alert('Network error: ' + error.message + '\n\nCheck browser console for details.');
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
         return; // Stop execution after error
